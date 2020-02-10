@@ -1,0 +1,66 @@
+body {
+  font-family: Georgia;
+}
+
+.navButtons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navButton {
+  text-align: center;
+  background-color: #E7E7E7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navButton:hover {
+  background-color: #035EFC;
+  color: white;
+}
+
+.content {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.inputText {
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.btnSubmit {
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/*Desktop View*/
+@media (min-width: 800px) {
+  .navButtons {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;  
+  }
+
+  .navButton {
+    width: 25%;
+  }
+}
