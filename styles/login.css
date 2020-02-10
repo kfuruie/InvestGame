@@ -2,6 +2,8 @@ body {
   font-family: Georgia;
 }
 
+/*NavBar CSS*/
+
 .navButtons {
   width: 100%;
   display: flex;
@@ -21,8 +23,11 @@ body {
   color: white;
 }
 
+/*End of NavBar CSS*/
+
 .content {
   width: 80%;
+  margin-top: 15%;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -30,6 +35,18 @@ body {
 .login {
   display: flex;
   flex-direction: column;
+}
+
+.login * {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#title {
+  text-align: center;
+  font-size: 2em;
+  
+  padding-bottom: 20px;
 }
 
 label {
@@ -55,7 +72,9 @@ label {
 /*Desktop View*/
 @media (min-width: 800px) {
   .navButtons {
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     flex-direction: row;
     justify-content: space-between;  
   }

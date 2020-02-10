@@ -2,6 +2,8 @@ body {
   font-family: Georgia;
 }
 
+/*NavBar CSS*/
+
 .navButtons {
   width: 100%;
   display: flex;
@@ -20,6 +22,8 @@ body {
   background-color: #035EFC;
   color: white;
 }
+
+/*End of NavBar CSS*/
 
 .content {
   width: 80%;
