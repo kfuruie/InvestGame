@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Registration</title>
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="navBar"></div>
+  <div class="content">
+    <div class="investments">
+      <div class="total">Total Net Worth: $999.99</div>
+      <div class="labels">
+        <div>Entity</div>
+        <div>Shares</div>
+        <div>Value</div>
+        <div>Daily Gain/Loss</div>
+        <div>Edit</div>
+      </div>
+      <div class="entry">
+        <div class="entity">PLACEHOLDER</div>
+        <div class="shares">PLACEHOLDER</div>
+        <div class="value">$999.99</div>
+        <div class="dailyChange">+1.00%</div>
+        <div class="edit">PLACEHOLDER</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $("#navBar").load("navBar.html");
+    });
+  </script>
+
+</body>

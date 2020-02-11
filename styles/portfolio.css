@@ -3,7 +3,6 @@ body {
 }
 
 
-
 .content {
   width: 80%;
   margin-top: 15%;
@@ -11,35 +10,33 @@ body {
   margin-right: 10%;
 }
 
-.register {
+.investments {
   display: flex;
   flex-direction: column;
 }
 
-.register * {
+.investments * {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-#welcome {
+
+.total {
   text-align: center;
   font-size: 2em;
-  
-  padding-bottom: 20px;
-}
-
-label, .inputText, .btnSubmit {
-  width: 40%;
-  margin-left: 30%;
-  margin-right: 30%;
-}
-
-.btnSubmit {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 30px;
 }
 
 /*Desktop View*/
 @media (min-width: 800px) {
-
+  
+  .labels, .entry {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .labels *, .entry *{
+    width: 20%;
+  }
 }
