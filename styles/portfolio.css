@@ -37,6 +37,7 @@ body {
   }
   
   .labels *, .entry *{
+    text-align: center;
     width: 20%;
   }
 }

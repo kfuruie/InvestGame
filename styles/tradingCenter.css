@@ -1,0 +1,68 @@
+body {
+  font-family: Georgia;
+}
+
+
+.content {
+  width: 80%;
+  margin-top: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.tradingCenter {
+  display: flex;
+  flex-direction: column;
+}
+
+.tradingCenter * {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 30px;
+}
+
+/*Desktop View*/
+@media (min-width: 800px) {
+  
+  .heading {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 100%;
+  }
+  
+  .title {
+    width: 50%;
+  }
+  
+  .button {
+    text-align: center;
+    width: 25%;
+  }
+  
+  .entry {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .entryContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .entryContainer * {
+    text-align: center;
+    width: 33%;
+  }
+  
+  .placeholder {
+    /*Make me float left somehow*/
+  }
+}

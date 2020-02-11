@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Registration</title>
+  <link rel="stylesheet" href="styles/tradingCenter.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="navBar"></div>
+  <div class="content">
+    <div class="tradingCenter">
+      <div class="heading">
+        <div class="button refine">Refine</div>
+        <div class="title">Trading Center</div>
+        <div class="button sort">Sort By</div>
+      </div>
+      <div class="entry">
+        <div class="entryContainer">
+          <div class="placeholder">PLACEHOLDER</div>
+          <div class="descriptor">
+            <div class="name">NAME</div>
+            <div class="button details">More Details</div>
+          </div>
+          <div class="price">
+            <div class="priceDesc">Price Per Share:</div>
+            <div class="ticker">TICKER</div>
+          </div>
+        </div>
+        <div class="checkbox">CHECKBOX</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $("#navBar").load("navBar.html");
+    });
+  </script>
+
+</body>
