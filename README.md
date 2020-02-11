@@ -9,6 +9,7 @@ Phase 2 TODO
 -  Make skeleton pages for the rest of the site
 -  Add actual links to the NavBar buttons
 -  Create "Hamburger" button for NavBar on mobile view
+-  https://www.w3schools.com/howto/howto_css_menu_icon.asp
 
 
 - Validate Form Data
