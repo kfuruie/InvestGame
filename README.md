@@ -5,6 +5,11 @@ __Phase 2 TODO__
 
 ---
 
+Design
+- Confer as team on the logged-in homepage design choices
+
+---
+
 HTML
 - [X] Link together NavBars so only one file has to be changed [Github Solution](https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages)
 - [ ] Make skeleton pages for the rest of the site
