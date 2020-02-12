@@ -7,13 +7,14 @@ __Phase 2 TODO__
 
 Design
 - [ ] Confer as team on the logged-in homepage design choices
+- [ ] Options Page? Or About Page? What could users configure?
 
 ---
 
 HTML
 - [X] Link together NavBars so only one file has to be changed [Github Solution](https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages)
-- [ ] Make skeleton pages for the rest of the site
-- [ ] Add actual links to the NavBar buttons
+- [X] Make skeleton pages for the rest of the site
+- [ ] Add actual links to the NavBar buttons (Dependent on Design Decisions)
 
 ---
 
