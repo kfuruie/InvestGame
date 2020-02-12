@@ -1,3 +1,11 @@
+/*Link style clear*/
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
 .navButtons {
   width: 100%;
   display: flex;
