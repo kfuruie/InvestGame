@@ -6,7 +6,7 @@ __Phase 2 TODO__
 ---
 
 Design
-- Confer as team on the logged-in homepage design choices
+- [ ] Confer as team on the logged-in homepage design choices
 
 ---
 
