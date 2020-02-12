@@ -14,7 +14,7 @@ Design
 HTML
 - [X] ~~Link together NavBars so only one file has to be changed~~ [Github Solution](https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages)
 - [ ] Make skeleton pages for homepage (Dependent on Design Decisions)
-- [ ] Add actual links to the NavBar buttons (Dependent on Design Decisions)
+- [ ] Add actual links to the navBar buttons (Dependent on Design Decisions, easy and mostly done though)
 
 ---
 
