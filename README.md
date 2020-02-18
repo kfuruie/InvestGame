@@ -6,9 +6,9 @@ __Phase 2 TODO__
 ---
 
 Design
-- [X] Confer as team on the logged-in homepage design choices
+- [X] ~~Confer as team on the logged-in homepage design choices~~
 - ^Market Data as whole or Investments as whole
-- [X] Options Page? Or About Page? What could users configure?
+- [X] ~~Options Page? Or About Page? What could users configure?~~
 - ^About Page about our project
 
 ---
