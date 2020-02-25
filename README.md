@@ -24,4 +24,4 @@ Actual Programming
 - [ ] Create "Hamburger" button for NavBar on mobile view [W3 Solution](https://www.w3schools.com/howto/howto_css_menu_icon.asp)
 - [ ] Validate Form Data
 - [ ] Mask password entry
-- [ ] Display different homepages/elements depending on logged in/out status
+- [ ] Display different homepages/elements depending on logged in/out status (is this within Phase 2 purview?)
