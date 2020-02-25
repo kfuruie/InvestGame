@@ -27,7 +27,7 @@ NavBar
 Form Validation
 - [ ] Register page form validation
 - [ ] Login page form validation
-- [ ] Search Bar validation?
+- [ ] Search Bar form validation
 - [ ] Mask password entry
 
 ---
