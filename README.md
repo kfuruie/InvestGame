@@ -21,15 +21,18 @@ HTML
 
 ---
 
-Actual Programming
+Javascript?
 - [ ] Create "Hamburger" button for NavBar on mobile view [W3 Solution](https://www.w3schools.com/howto/howto_css_menu_icon.asp)
 
+---
 
-- [ ] Validate Form Data
-- [ ] Register Forms
-- [ ] Login Forms
-- [ ] Search Bar Validation?
+Form Validation
+- [ ] Register page form validation
+- [ ] Login page form validation
+- [ ] Search Bar validation?
 - [ ] Mask password entry
 
+---
 
+Miscellaneous
 - [ ] Display different homepages/elements depending on logged in/out status (is this within Phase 2 purview?)
