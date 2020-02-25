@@ -7,15 +7,15 @@ __Phase 2 TODO__
 
 Index Page
 - [ ] Make Index page w/ Market Data as whole or Investments as whole
-- [ ] Make skeleton pages for homepage (Mostly done, needs index page)
-- [ ] Add actual links to the navBar buttons (Dependent on above)
+- [ ] Add links to the navBar buttons (Dependent on above)
 
 ---
 
 Missing Buttons/Functionality
 - [ ] Add Search Bar to the navBar
-- [ ] Add Dummy Search Results page 
+- [ ] Create Dummy Search Results page 
 - [ ] Add "Shopping Cart" functionality to Trading Center
+- [ ] Create Dummy Shopping Cart page
 
 ---
 
