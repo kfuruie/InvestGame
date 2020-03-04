@@ -34,6 +34,7 @@ Form Validation
 
 Miscellaneous
 - [ ] Display different homepages/elements depending on logged in/out status (is this within Phase 2 purview?)
+- [ ] Go back and make everything look pretty
 
 
 ---
