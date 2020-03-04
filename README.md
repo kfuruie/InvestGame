@@ -41,5 +41,8 @@ Finishing Touches
 
 ---
 
+Stretch Goals
+- [ ] Make Register Page with Email input
+
 Things to cite
 - [X] ~~Link together NavBars so only one file has to be changed~~ [Github Solution](https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages)
