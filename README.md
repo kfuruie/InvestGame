@@ -14,8 +14,8 @@ Index Page
 Missing Buttons/Functionality
 - [ ] Add Search Bar to the navBar
 - [ ] Create Dummy Search Results page 
-- [ ] Add "Shopping Cart" functionality to Trading Center
-- [ ] Create Dummy Shopping Cart page
+- [X] ~~Add "Shopping Cart" functionality to Trading Center~~
+- [X] ~~Create Dummy Shopping Cart page~~
 
 ---
 
