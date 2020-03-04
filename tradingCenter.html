@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Registration</title>
+  <title>Trading Center</title>
   <link rel="stylesheet" href="styles/tradingCenter.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -13,13 +13,13 @@
   <div class="content">
     <div class="tradingCenter">
       <div class="heading">
-        <div class="button refine">Refine</div>
+      	<div class="dummy"></div>
         <div class="title">Trading Center</div>
         <div class="button sort">Sort By</div>
       </div>
+
       <div class="entry">
         <div class="entryContainer">
-          <div class="placeholder">PLACEHOLDER</div>
           <div class="descriptor">
             <div class="name">NAME</div>
             <div class="button details">More Details</div>
@@ -29,8 +29,29 @@
             <div class="ticker">TICKER</div>
           </div>
         </div>
-        <div class="checkbox">CHECKBOX</div>
+        <input type="checkbox" class="checkbox">
       </div>
+
+      <div class="entry">
+        <div class="entryContainer">
+          <div class="descriptor">
+            <div class="name">NAME</div>
+            <div class="button details">More Details</div>
+          </div>
+          <div class="price">
+            <div class="priceDesc">Price Per Share:</div>
+            <div class="ticker">TICKER</div>
+          </div>
+        </div>
+        <input type="checkbox" class="checkbox">
+      </div>
+
+
+      <div class="confirmation">
+      	<div class="total">Total: $<span class="price">99999.99</span></div>
+      	<button class="confirm">Confirm Order</button>
+      </div>
+
     </div>
   </div>
 

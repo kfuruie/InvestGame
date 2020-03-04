@@ -22,8 +22,62 @@ body {
 
 .title {
   text-align: center;
+  margin: auto;
   font-size: 2em;
   padding-bottom: 30px;
+}
+
+.sort {
+  text-align: center;
+  margin: auto;
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  margin-top: 2%;
+}
+
+.entryContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: grey;
+}
+
+.entryContainer * {
+  text-align: center;
+  margin: auto;
+}
+
+.descriptor {
+  width: 40%;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+}
+
+.checkbox {
+  margin: auto;
+
+  margin-top: 5%;
+  height: 25px;
+  width: 25px;
+}
+
+.confirmation {
+  display: flex;
+  flex-direction: column;
+}
+
+.total, .price {
+  margin: auto;
+  display: inline;
 }
 
 /*Desktop View*/
@@ -37,32 +91,38 @@ body {
   }
   
   .title {
+    width: 80%;
+  }
+
+  .dummy, .sort {
+    width: 20%;
+  }
+
+  .entry {
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .entryContainer {
+    width: 55%;
+  }
+
+  .entryContainer * {
     width: 50%;
   }
   
-  .button {
-    text-align: center;
-    width: 25%;
-  }
-  
   .entry {
-    display: flex;
     flex-direction: row;
-    width: 100%;
   }
-  
-  .entryContainer {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+
+  .checkbox {
+    margin: auto;
+    margin-left: 10%;
   }
-  
-  .entryContainer * {
-    text-align: center;
-    width: 33%;
-  }
-  
-  .placeholder {
-    /*Make me float left somehow*/
+
+  .confirm {
+    margin: auto;
+    width: 10%;
   }
 }
