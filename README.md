@@ -14,6 +14,8 @@ Index Page
 Missing Buttons/Functionality
 - [ ] Add Search Bar to the navBar
 - [ ] Create Dummy Search Results page 
+- [ ] Link "Add" button on Dummy Search Results page to Trading Center
+- [ ] Link "Confirm Order" button on Trading Center to Portfolio
 - [X] ~~Add "Shopping Cart" functionality to Trading Center~~
 - [X] ~~Create Dummy Shopping Cart page~~
 
@@ -32,8 +34,7 @@ Form Validation
 
 ---
 
-Miscellaneous
-- [ ] Display different homepages/elements depending on logged in/out status (is this within Phase 2 purview?)
+Finishing Touches
 - [ ] Go back and make everything look pretty
 
 
