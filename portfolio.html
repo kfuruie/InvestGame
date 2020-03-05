@@ -11,8 +11,9 @@
 <body>
   <div id="navBar"></div>
   <div class="content">
+    <div class="total">Total Net Worth: $300</div>
     <div class="investments">
-      <div class="total">Total Net Worth: $999.99</div>
+
       <div class="labels">
         <div>Entity</div>
         <div>Shares</div>
@@ -20,13 +21,43 @@
         <div>Daily Gain/Loss</div>
         <div>Buy/Sell</div>
       </div>
+
       <div class="entry">
-        <div class="entity">PLACEHOLDER</div>
-        <div class="shares">PLACEHOLDER</div>
-        <div class="value">$999.99</div>
-        <div class="dailyChange">+1.00%</div>
-        <div class="edit">PLACEHOLDER</div>
+        <div class="entity">Fury Investments</div>
+        <div class="shares">10</div>
+        <div class="value">$100</div>
+        <div class="dailyChange">-2.16%</div>
+        <div class="buySell">
+          <div class="radioContainer">
+            <span>Buy</span><input name="group1" type="radio">
+            <span>Sell</span><input name="group1" type="radio">
+          </div>
+          <div class="amountContainer">
+            <div>Amount</div>
+            <input type="amount" min="0" max="99"/>
+          </div>
+        </div>
       </div>
+
+      <div class="entry">
+        <div class="entity">Le Holdings</div>
+        <div class="shares">10</div>
+        <div class="value">$200</div>
+        <div class="dailyChange">+6.73%</div>
+        <div class="buySell">
+          <div class="radioContainer">
+            <span>Buy</span><input name="group2" type="radio">
+            <span>Sell</span><input name="group2" type="radio">
+          </div>
+          <div class="amountContainer">
+            <div>Amount</div>
+            <input type="amount" min="0" max="99"/>
+          </div>
+        </div>
+      </div>
+
+      <button class="confirm">Confirm Order</button>
+
     </div>
   </div>
 

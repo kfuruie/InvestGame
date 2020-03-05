@@ -21,39 +21,41 @@
       <div class="entry">
         <div class="entryContainer">
           <div class="descriptor">
-            <div class="name">NAME</div>
+            <div class="name">Fury Investments</div>
             <div class="button details">More Details</div>
           </div>
           <div class="price">
-            <div class="priceDesc">Price Per Share:</div>
-            <div class="ticker">
-              <input type="button" value="addOne" onclick="add('amt1');"/>
-              <input type="button" value="subOne" onclick="sub('amt1');"/>
-              <span id="amt1">0</span>
-            </div>
+            <div class="priceDesc">Price Per Share: $<span id="entry1Price">10</span></div>
+            <input type="number" id="entry1Input" min="0" max="99"/>
+          </div>
+          <div class="totalPrice">
+            <div class="totalDesc">Total: $<span id="entry1Total"></span></div>
           </div>
         </div>
-        <input type="checkbox" class="checkbox">
+        <input type="checkbox" class="checkbox" id="entry1Check" onclick=updateTotal(this) id="entry1Price">
       </div>
 
       <div class="entry">
         <div class="entryContainer">
           <div class="descriptor">
-            <div class="name">NAME</div>
+            <div class="name">Le Holdings</div>
             <div class="button details">More Details</div>
           </div>
           <div class="price">
-            <div class="priceDesc">Price Per Share:</div>
-            <div class="ticker">TICKER</div>
+            <div class="priceDesc">Price Per Share: $<span id="entry2Price">20</span></div>
+            <input type="number" id="entry2Input" min="0" max="99"/>
+          </div>
+          <div class="totalPrice">
+            <div class="totalDesc">Total: $<span id="entry2Total"></span></div>
           </div>
         </div>
-        <input type="checkbox" class="checkbox">
+        <input type="checkbox" class="checkbox" id="entry2Check" onclick=updateTotal(this) id="entry2Price">
       </div>
 
 
       <div class="confirmation">
-      	<div class="total">Total: $<span class="price">99999.99</span></div>
-      	<button class="confirm">Confirm Order</button>
+      	<div class="total">Total: $<span id="total">0</span></div>
+      	<button class="confirm" onclick="window.location.href = 'portfolio.html';">Confirm Order</button>
       </div>
 
     </div>
@@ -61,17 +63,49 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
+    var total = 0;
+
     $(function(){
       $("#navBar").load("navBar.html");
     });
 
-    function add(id) {
-      document.getElementById(id).stepUp(1);
+    function updateTotal(checkID) {
+
+      let id = updateTotal.caller.arguments[0].target.id;
+      let checkBox = document.getElementById(id);
+
+      if (checkBox.checked == true) {
+
+        if (id == "entry1Check") {
+
+          let basePrice = document.getElementById("entry1Price").innerHTML;
+          let numberShares = document.getElementById("entry1Input").value;
+          let total = basePrice * numberShares;
+
+          document.getElementById("entry1Total").innerHTML = total;
+
+          console.log(total);
+        }
+
+        if (id == "entry2Check") {
+
+          let basePrice = document.getElementById("entry2Price").innerHTML;
+          let numberShares = document.getElementById("entry2Input").value;
+          let total = basePrice * numberShares;
+
+          document.getElementById("entry2Total").innerHTML = total;
+
+          console.log(total);
+        }
+      }
+
+      let entry1 = document.getElementById("entry1Total").innerHTML;
+      let entry2 = document.getElementById("entry2Total").innerHTML
+
+      let total = eval(entry1) + eval(entry2);
+      document.getElementById("total").innerHTML = total;
     }
 
-    function sub(id) {
-      document.getElementById(id).stepDown(1);
-    }
   </script>
 
 </body>
