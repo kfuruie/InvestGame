@@ -15,13 +15,15 @@
       <div id="title">Login</div>
       <div>
         <label>Username</label>
-        <input class="inputText" type="text" name="username" placeholder="Username">
+        <input class="inputText" type="text" id="username" placeholder="Username">
+        <div class="alert" id="userAlert">Please provide a name</div>
       </div>
       <div>
         <label>Password</label>
-        <input class="inputText" type="text" name="password" placeholder="Password">
+        <input class="inputText" type="password" id="password" placeholder="Password">
+        <div class="alert" id="passAlert">Please provide a password</div>
       </div>
-      <button onclick="window.location.href = 'index.html';" class="btnSubmit" type="submit">LOGIN</button> <!-- Should link to index page for purposes of demo. Use JS to fulfill requirements? -->
+      <button onclick=validate() class="btnSubmit" type="submit">LOGIN</button> <!-- Should link to index page for purposes of demo. Use JS to fulfill requirements? -->
       <button onclick="window.location.href = 'registration.html';" class="btnSubmit" type="submit">REGISTER</button>
     </div>
   </div>
@@ -31,6 +33,30 @@
     $(function(){
       $("#navBar").load("navBar.html");
     });
+
+    function validate() {
+
+      let alertUser = document.getElementById("userAlert");
+      let alertPass = document.getElementById("passAlert");
+
+      if (document.getElementById("username").value == "") {
+        alertUser.style.display = "block";
+      }
+      else {
+        alertUser.style.display = "none";
+      }
+
+      if (document.getElementById("password").value == "") {
+        alertPass.style.display = "block";
+      }
+      else {
+        alertPass.style.display = "none";
+      }
+
+      if (document.getElementById("username").value != "" && document.getElementById("password").value != "") {
+        window.location.href = 'tradingCenter.html';
+      }
+    }
   </script>
 
 </body>

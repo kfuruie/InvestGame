@@ -17,17 +17,21 @@
       </div>
       <div>
         <label>Username</label>
-        <input class="inputText" type="text" name="username" placeholder="Username">
+        <input class="inputText" type="text" id="username" placeholder="Username">
+        <div class="alert" id="userAlert">Please provide a name</div>
       </div>
       <div>
         <label>Email</label>
-        <input class="inputText" type="text" name="password" placeholder="Email Address">
+        <input class="inputText" type="email" id="email" placeholder="Email Address">
+        <div class="alert" id="emailAlert">Please provide an email address</div>
+        <div class="alert" id="emailRegexAlert">Please provide a valid email address</div>
       </div>
       <div>
         <label>Password</label>
-        <input class="inputText" type="text" name="password" placeholder="Password">
+        <input class="inputText" type="password" id="password" placeholder="Password">
+        <div class="alert" id="passAlert">Please provide a password</div>
       </div>
-      <button onclick="window.location.href = 'index.html';" class="btnSubmit" type="submit">REGISTER</button>
+      <button onclick=validate() class="btnSubmit" type="submit">REGISTER</button>
     </div>
   </div>
 
@@ -36,6 +40,50 @@
     $(function(){
       $("#navBar").load("navBar.html");
     });
+
+    function validate() {
+
+      let alertUser = document.getElementById("userAlert");
+      let alertPass = document.getElementById("passAlert");
+      let alertEmail = document.getElementById("emailAlert");
+      let alertEmailRegex = document.getElementById("emailRegexAlert");
+
+      let emailInput = document.getElementById("email").value;
+      let emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_'{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+      if (document.getElementById("username").value == "") {
+        alertUser.style.display = "block";
+      }
+      else {
+        alertUser.style.display = "none";
+      }
+
+      if (document.getElementById("email").value == "") {
+        alertEmail.style.display = "block";
+      }
+      else {
+        alertEmail.style.display = "none";
+      }
+     
+       if (!emailInput.match(emailRegex)) {
+        alertEmailRegex.style.display = "block";
+      }
+      else {
+        alertEmailRegex.style.display = "none";
+      }
+
+      if (document.getElementById("password").value == "") {
+        alertPass.style.display = "block";
+      }
+      else {
+        alertPass.style.display = "none";
+      }
+
+
+      if (document.getElementById("username").value != "" && document.getElementById("password").value != "" && document.getElementById("email").value.match(emailRegex) && document.getElementById("email").value != "") {
+        window.location.href = 'tradingCenter.html';
+      }
+    }
   </script>
 
 </body>
