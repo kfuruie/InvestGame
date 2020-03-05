@@ -16,6 +16,7 @@ Missing Buttons/Functionality
 - [ ] Link from Login page -> Index page
 - [ ] Link "Confirm Order" button on Trading Center to Portfolio
 - [ ] Ticker Buttons in Trading Center
+- [ ] Portfolio Buy/Sell buttons/input functionality
 - [X] ~~Add "Shopping Cart" functionality to Trading Center~~
 - [X] ~~Create Dummy Shopping Cart page~~
 
