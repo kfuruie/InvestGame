@@ -3,14 +3,43 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<link rel="stylesheet" href="styles/navBar.css">
+    <link rel="stylesheet" href="styles/navBar.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Navigation Bar</title>
+
 </head>
 
+  <div class="searchbar">
+    <form action="#" method="post">
+      <input type="text" placeholder="Search" name="search" size="50" maxlength="50">
+      <button type="submit">SEARCH</button>
+    </form>
+  </div>
+
   <div class="header">
-    <div class="navButtons">
-      <a class="navButton" href="portfolio.html">HOME</a> <!--Real index page later? -->
+    <div class="navButtons" id="menu">
+      <a href="#" class="navButton icon" onclick="hamburger()">
+      <i class="fa fa-bars"></i>
+      </a>
+      <a class="navButton" href="">HOME</a> <!--Fix my link later -->
       <a class="navButton" href="tradingCenter.html">SEARCH</a>
       <a class="navButton" href="portfolio.html">PORTFOLIO</a>
       <a class="navButton" href="about.html">ABOUT</a>
     </div>
   </div>
+
+<script>
+  function hamburger(){
+    var n = document.getElementById("menu");
+    if(n.className === "navButtons"){
+      n.className += ".burger";
+    }
+    else{
+      n.className = "navButtons";
+      var hideMe = document.getElementByClassName("fa");
+      hideMe.style.display ="none";
+    }
+  }
+</script>
+
+  </html>
