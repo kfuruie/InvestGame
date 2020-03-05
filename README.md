@@ -6,14 +6,14 @@ __Phase 2 TODO__
 ---
 
 Index Page
-- [ ] Make Index page w/ Market Data as whole or Investments as whole
-- [ ] Add links to the navBar buttons (Dependent on above)
+- [X] ~~Make Index page w/ Market Data as whole or Investments as whole~~
+- [X] ~~Add links to the navBar buttons (Dependent on above)~~
 
 ---
 
 Missing Buttons/Functionality
 - [X] ~~Add Search Bar to the navBar~~
-- [ ] Link from Login page -> Index page
+- [X] ~~Link from Login page -> Index page~~
 - [X] ~~Link "Confirm Order" button on Trading Center to Portfolio~~
 - [X] ~~Ticker Buttons in Trading Center~~
 - [X] ~~Portfolio Buy/Sell buttons/input functionality~~
