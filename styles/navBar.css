@@ -1,4 +1,13 @@
 /*Link style clear*/
+*{font-family: Georgia;}
+
+/*Search Bar*/
+.searchbar {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
 a {
   color: black;
@@ -29,6 +38,13 @@ a {
 
 /*Desktop View*/
 @media (min-width: 800px) {
+  .searchbar {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
   .navButtons {
     width: 80%;
     margin-left: 10%;
