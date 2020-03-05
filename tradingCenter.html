@@ -89,17 +89,25 @@
 
           let basePrice = document.getElementById("entry2Price").innerHTML;
           let numberShares = document.getElementById("entry2Input").value;
-          let total = basePrice * numberShares;
+          //let total = basePrice * numberShares;
 
-          document.getElementById("entry2Total").innerHTML = total;
+          //Anonymous Function//
+          let total = function(basePrice, numberShares){return basePrice * numberShares};
+          var res = total(basePrice, numberShares);
+
+          document.getElementById("entry2Total").innerHTML = res;
+
+          console.log(res);
         }
       }
 
       let entry1 = document.getElementById("entry1Total").innerHTML;
       let entry2 = document.getElementById("entry2Total").innerHTML
 
-      let total = eval(entry1) + eval(entry2);
-      document.getElementById("total").innerHTML = total;
+      //Arrow Function//
+      total = (x, y) => eval(x) + eval(y);
+      //let total = eval(entry1) + eval(entry2);
+      document.getElementById("total").innerHTML = total(entry1, entry2);
     }
 
   </script>
