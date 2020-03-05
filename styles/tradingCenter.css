@@ -105,11 +105,11 @@ body {
   }
 
   .entryContainer {
-    width: 55%;
+    width: 65%;
   }
 
   .entryContainer * {
-    width: 50%;
+    width: 33%;
   }
   
   .entry {
