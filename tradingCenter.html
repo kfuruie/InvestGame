@@ -26,7 +26,11 @@
           </div>
           <div class="price">
             <div class="priceDesc">Price Per Share:</div>
-            <div class="ticker">TICKER</div>
+            <div class="ticker">
+              <input type="button" value="addOne" onclick="add('amt1');"/>
+              <input type="button" value="subOne" onclick="sub('amt1');"/>
+              <span id="amt1">0</span>
+            </div>
           </div>
         </div>
         <input type="checkbox" class="checkbox">
@@ -60,6 +64,14 @@
     $(function(){
       $("#navBar").load("navBar.html");
     });
+
+    function add(id) {
+      document.getElementById(id).stepUp(1);
+    }
+
+    function sub(id) {
+      document.getElementById(id).stepDown(1);
+    }
   </script>
 
 </body>
