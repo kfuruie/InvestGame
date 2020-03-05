@@ -23,15 +23,15 @@ Missing Buttons/Functionality
 ---
 
 NavBar
-- [ ] Create "Hamburger" button for NavBar on mobile view [W3 Solution](https://www.w3schools.com/howto/howto_css_menu_icon.asp)
+- [X] ~~Create "Hamburger" button for NavBar on mobile view [W3 Solution]~~(https://www.w3schools.com/howto/howto_css_menu_icon.asp)
 
 ---
 
 Form Validation
-- [ ] Register page form validation
-- [ ] Login page form validation
-- [ ] Search Bar form validation
-- [ ] Mask password entry for all relevant forms
+- [X] ~~Register page form validation~~
+- [X] ~~Login page form validation~~
+- [X] ~~Search Bar form validation~~
+- [X] ~~Mask password entry for all relevant forms~~
 
 ---
 
