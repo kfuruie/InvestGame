@@ -36,7 +36,16 @@
   </div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <?php 
+  if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    if (!empty($_POST['name']) && !empty($_GET['email']) && !empty($_GET['pwd'])) {
+      echo "The POST request works! <br/>";
+    }
+  }
+
+  ?>
+  
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
     $(function(){
       $("#navBar").load("navBar.html");
@@ -85,6 +94,6 @@
         window.location.href = 'tradingCenter.html';
       }
     }
-  </script>
+  </script>-->
 
 </body>
