@@ -5,11 +5,11 @@ __Phase 3 TODO__
 
 ---
 
-(6 points) — Correctly and properly implement at least three of the following requirements (2 points each):
-- Use array(s), may be one-dimensional arrays or multi-dimensional arrays
-- Use expressions
-- Use control structures (selection and loop)
-- Use predefined / standard function(s)
+- (6 points) — Correctly and properly implement at least three of the following requirements (2 points each):
+   - Use array(s), may be one-dimensional arrays or multi-dimensional arrays
+   - Use expressions
+   - Use control structures (selection and loop)
+   - Use predefined / standard function(s)
 ~~(4 points) — Correctly and properly implement at least one user-defined function~~
 (6 points) — Correctly and properly use the following implicit objects:
 - (3 points) $_GET
