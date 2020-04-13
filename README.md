@@ -10,10 +10,10 @@ __Phase 3 TODO__
    - Use expressions
    - Use control structures (selection and loop)
    - Use predefined / standard function(s)
-~~(4 points) — Correctly and properly implement at least one user-defined function~~
-(6 points) — Correctly and properly use the following implicit objects:
-- (3 points) $_GET
-~~- (3 points) $_POST~~
+- ~~(4 points) — Correctly and properly implement at least one user-defined function~~
+- (6 points) — Correctly and properly use the following implicit objects:
+   - (3 points) $_GET
+   ~~- (3 points) $_POST~~
 (12 points) — Appropriate server-side input validation
 - (10 points) Properly validate form data
 - (2 points) Provide user-appropriate error messages
