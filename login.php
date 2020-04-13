@@ -31,30 +31,6 @@
     $(function(){
       $("#navBar").load("navBar.html");
     });
-
-    function validate() {
-
-      let alertUser = document.getElementById("userAlert");
-      let alertPass = document.getElementById("passAlert");
-
-      if (document.getElementById("username").value == "") {
-        alertUser.style.display = "block";
-      }
-      else {
-        alertUser.style.display = "none";
-      }
-
-      if (document.getElementById("password").value == "") {
-        alertPass.style.display = "block";
-      }
-      else {
-        alertPass.style.display = "none";
-      }
-
-      if (document.getElementById("username").value != "" && document.getElementById("password").value != "") {
-        window.location.href = 'tradingCenter.html';
-      }
-    }
   </script>
 
 </body>
