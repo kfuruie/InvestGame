@@ -36,7 +36,7 @@ function updateShares($user, $fury, $le)
 {
 	global $db;
 	
-	$query = "UPDATE user_info SET fury_shares=:fury, le_shares=:le WHERE username =:username";
+	$query = "UPDATE user_info SET fury_shares+=:fury, le_shares+=:le WHERE username =:username";
     $statement = $db->prepare($query);
     $statement->bindValue(':username', $user);
 	$statement->bindValue(':fury', $fury);
@@ -81,7 +81,7 @@ function getShares_by_id($user)
 	
 	// echo "in getTaskInfo_by_id " . $id ;
 	
-	$query = "SELECT fury_shares, le_shares FROM username where username = :user";
+	$query = "SELECT fury_shares, le_shares FROM user_info where username = :user";
 	$statement = $db->prepare($query);
 	$statement->bindValue(':user', $user);
 	$statement->execute();

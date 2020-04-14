@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 
-<?php session_start();?>
+<?php session_start();
+  require("dbcommands.php");
+?>
 
 <html lang="en">
 
@@ -20,8 +22,9 @@
   <div id="navBar"></div>
   <div class="content">
     <div class="total"> <?php if (isset($_SESSION['user'])) {
-      if (isset($_COOKIE["fury"]) && (isset($_COOKIE["le"]))) {
-        $net = ($_COOKIE["fury"] * 10) + ($_COOKIE["le"] * 20);
+      if (/*isset($_COOKIE["fury"]) && */(isset($_COOKIE["le"]))) {
+        $numshares = getShares_by_id($_SESSION['user']);
+        $net = ($numshares[0] * 10) + ($_COOKIE["le"] * 20);
         echo $_SESSION['user'] . "'s Net Worth: $" . $net . ".00"; 
       }
     }?>
@@ -39,16 +42,18 @@
       <div class="entry">
         <div class="entity">Fury Investments</div>
         <div class="shares">
-          <?php if(isset($_COOKIE["fury"])) {
-            echo $_COOKIE["fury"] . " shares";
-          }
-          ?>
+        <?php
+          
+          $numshares = getShares_by_id($_SESSION['user']);
+          echo $numshares[0] . " shares"; ?>
         </div>
         <div class="value">
-          <?php if(isset($_COOKIE["fury"])) {
-            $value = $_COOKIE["fury"] * 10;
+          <?php
+            //require("dbcommands.php");
+            $numshares = getShares_by_id($_SESSION['user']);
+            $value = $numshares[0] * 10;
             echo "$" . $value . ".00";
-          }?>
+          ?>
         </div>
         <div class="dailyChange">-2.16%</div>
         <div class="buySell">

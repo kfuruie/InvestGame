@@ -77,15 +77,17 @@
   ?>
 
   <?php
+    require('dbcommands.php');
     if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['confirm'])) {
       if (($_POST['fury'] >= 0) && _($_POST['le'] >= 0)) {
 
         $furyShares = $_POST['fury'];
         $leShares = $_POST['le'];
 
-        setcookie("fury", $furyShares, time() + (86400 * 30), "/");
+        //setcookie("fury", $furyShares, time() + (86400 * 30), "/");
         setcookie("le", $leShares, time() + (86400 * 30), "/");
 
+        updateShares($_SESSION['user'], $furyShares, 0); //HARDCODED VALUE FOR LESHARES BC COOKIES
         header('Location: portfolio.php');
       }
     }
