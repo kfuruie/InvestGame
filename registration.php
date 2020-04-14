@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<?php session_start();?>
+
 <html lang="en">
 
 <head>
@@ -29,6 +32,35 @@
       </div>
       <button class="btnSubmit" type="submit" value="submit">REGISTER</button>
     </form>
+
+ 	<?php
+
+ 	function register() {
+
+    if ($_SERVER['REQUEST_METHOD'] == "POST") {
+      	//Database interaction
+      	//Email validation
+    	//Password validation
+
+    	if(strlen($_POST['name']) > 0) {
+        	$user = trim($_POST['name']);
+
+        	if (!ctype_alnum($user)) {
+          	echo "Username must be alphanumeric only!";
+          	//reject('name');
+        	}
+        	else {
+        		header('Location: login.php');
+        	}
+    	}
+  	}
+ 	}
+
+ 	register();
+
+ 	?>
+
+
   </div>
 
 
@@ -39,24 +71,6 @@
     });
   </script>
 
-  <?php
-
-  function register() {
-
-    if ($_SERVER['REQUEST_METHOD'] == "POST") {
-      //Stuff to interact with database?
-      //Not sure what to put here
-
-      header('Location: login.php');
-
-  	}
-  }
-
-  register();
-
-  ?>
-
 
 </body>
 </html> 
-?>

@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<?php session_start();?>
+
 <html lang="en">
 
 <head>
@@ -24,13 +27,8 @@
         <input class="inputText" type="password" id="password" name="pwd" placeholder="Password" required>
       </div>
       <button class="btnSubmit" type="submit">LOGIN</button>
-      <button onclick="window.location.href = 'registration.php';" class="btnSubmit" type="submit">REGISTER</button>
+      <button onclick="window.location.href = 'registration.php';" class="btnSubmit">REGISTER</button>
     </div>
-
-  </div>
-
-
-  <?php session_start();?>
 
   <?php
 
@@ -41,27 +39,31 @@
         $user = trim($_POST['name']);
 
         if (!ctype_alnum($user)) {
-          reject('name');
           echo "Username must be alphanumeric only!";
+          //reject('name');
+        }
+        else {
+          $pwd = htmlspecialchars($_POST['pwd']);
+          $hash = password_hash($pwd, PASSWORD_BCRYPT);
+
+          if (password_verify($pwd, $hash)){
+            $_SESSION['user'] = $user;
+            header('Location: tradingCenter.php');
+          }
+          else
+            echo "Username and password combination not found!";
+          }
         }
       }
-
-      $pwd = htmlspecialchars($_POST['pwd']);
-      $hash = password_hash($pwd, PASSWORD_BCRYPT);
-
-      if (password_verify($pwd, $hash)){
-        $_SESSION['user'] = $user;
-        header('Location: tradingCenter.php');
-      }
-
-      else
-        echo "Username and password combination not found!";
-    }
   }
 
   authenticate();
 
   ?>
+
+  </div>
+
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
