@@ -80,14 +80,11 @@
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
       if (($_POST['fury'] >= 0) && _($_POST['le'] >= 0)) {
 
-        $fury = fury;
-        $le = le;
-
         $furyShares = $_POST['fury'];
         $leShares = $_POST['le'];
 
-        setcookie($fury, $furyShares, time() + (86400 * 30), "/");
-        setcookie($le, $leShares, time() + (86400 * 30), "/");
+        setcookie("fury", $furyShares, time() + (86400 * 30), "/");
+        setcookie("le", $leShares, time() + (86400 * 30), "/");
 
         header('Location: portfolio.php');
       }

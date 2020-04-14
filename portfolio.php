@@ -19,7 +19,13 @@
 
   <div id="navBar"></div>
   <div class="content">
-    <div class="total"> <?php if (isset($_SESSION['user'])) echo $_SESSION['user']; ?>'s Net Worth: $300</div>
+    <div class="total"> <?php if (isset($_SESSION['user'])) {
+      if (isset($_COOKIE["fury"]) && (isset($_COOKIE["le"]))) {
+        $net = ($_COOKIE["fury"] * 10) + ($_COOKIE["le"] * 20);
+        echo $_SESSION['user'] . "'s Net Worth: $" . $net . ".00"; 
+      }
+    }?>
+    </div>
     <div class="investments">
 
       <div class="labels">
@@ -33,9 +39,17 @@
       <div class="entry">
         <div class="entity">Fury Investments</div>
         <div class="shares">
-          <?php if(isset($_COOKIE[$fury])) echo $_COOKIE[$fury] . " shares"; ?>
+          <?php if(isset($_COOKIE["fury"])) {
+            echo $_COOKIE["fury"] . " shares";
+          }
+          ?>
         </div>
-        <div class="value">$100</div>
+        <div class="value">
+          <?php if(isset($_COOKIE["fury"])) {
+            $value = $_COOKIE["fury"] * 10;
+            echo "$" . $value . ".00";
+          }?>
+        </div>
         <div class="dailyChange">-2.16%</div>
         <div class="buySell">
           <div class="radioContainer">
@@ -52,9 +66,14 @@
       <div class="entry">
         <div class="entity">Le Holdings</div>
         <div class="shares">
-          <?php if(isset($_COOKIE[$le])) echo $_COOKIE[$le] . " shares"; ?>
+          <?php if(isset($_COOKIE["le"])) echo $_COOKIE["le"] . " shares"; ?>
         </div>
-        <div class="value">$200</div>
+        <div class="value">
+          <?php if(isset($_COOKIE["fury"])) {
+            $value = $_COOKIE["le"] * 20;
+            echo "$" . $value . ".00";
+          }?>
+        </div>
         <div class="dailyChange">+6.73%</div>
         <div class="buySell">
           <div class="radioContainer">
