@@ -15,7 +15,7 @@
   ?>
 
   <div id="navBar"></div>
-  <div class="content">
+  <form class="content" action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
     <div class="tradingCenter">
       <div class="heading">
       	<div class="dummy"></div>
@@ -31,7 +31,7 @@
           </div>
           <div class="price">
             <div class="priceDesc">Price Per Share: $<span id="entry1Price">10</span></div>
-            <input type="number" id="entry1Input" min="0" max="99"/>
+            <input type="number" id="entry1Input" name="fury" min="0" max="99"/>
           </div>
           <div class="totalPrice">
             <div class="totalDesc">Total: $<span id="entry1Total"></span></div>
@@ -48,7 +48,7 @@
           </div>
           <div class="price">
             <div class="priceDesc">Price Per Share: $<span id="entry2Price">20</span></div>
-            <input type="number" id="entry2Input" min="0" max="99"/>
+            <input type="number" id="entry2Input" name="le" min="0" max="99"/>
           </div>
           <div class="totalPrice">
             <div class="totalDesc">Total: $<span id="entry2Total"></span></div>
@@ -60,7 +60,7 @@
 
       <div class="confirmation">
       	<div class="total">Total: $<span id="total">0</span></div>
-      	<button class="confirm" onclick="window.location.href = 'portfolio.html';">Confirm Order</button>
+      	<button class="confirm" type="submit">Confirm Order</button>
       </div>
 
     </div>
@@ -70,6 +70,16 @@
     }
     else {
       header('Location: login.php');
+    }
+  ?>
+
+  <?php
+    if ($_SERVER['REQUEST_METHOD'] == "POST") {
+      if (($_POST['fury'] >= 0) && _($_POST['le'] >= 0)) {
+        $_SESSION['fury'] = $fury;
+        $_SESSION['le'] = $le;
+        header('Location: portfolio.php');
+      }
     }
   ?>
 

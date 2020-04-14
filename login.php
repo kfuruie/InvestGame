@@ -23,7 +23,7 @@
         <label>Password</label>
         <input class="inputText" type="password" id="password" name="pwd" placeholder="Password" required>
       </div>
-      <button class="btnSubmit" type="submit" value="submit">LOGIN</button>
+      <button class="btnSubmit" type="submit">LOGIN</button>
       <button onclick="window.location.href = 'registration.php';" class="btnSubmit" type="submit">REGISTER</button>
     </div>
 

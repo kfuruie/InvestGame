@@ -16,7 +16,7 @@
 
   <div id="navBar"></div>
   <div class="content">
-    <div class="total"> <?php if (isset($_SESSION['user'])) echo %_SESSION['user']; ?>'s Net Worth: $300</div>
+    <div class="total"> <?php if (isset($_SESSION['user'])) echo $_SESSION['user']; ?>'s Net Worth: $300</div>
     <div class="investments">
 
       <div class="labels">
