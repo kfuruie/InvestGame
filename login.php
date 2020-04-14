@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-
-<?php session_start();?>
-
 <html lang="en">
 
 <head>
@@ -32,14 +29,33 @@
 
   </div>
 
+
+  <?php session_start();?>
+
   <?php
 
   function authenticate() {
 
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
-      $user = trim($_POST['name']);
-      $_SESSION['user'] = $user;
-      header('Location: tradingCenter.php');
+      if(strlen($_POST['name']) > 0)){
+        $user = trim($_POST['name']);
+
+        if (!ctype_alnum($user)) {
+          reject('name');
+          echo "Username must be alphanumeric only!";
+        }
+      }
+
+      $pwd = htmlspecialchars($_POST['pwd']);
+      $hash = password_hash($pwd, PASSWORD_BCRYPT);
+
+      if (password_verify($pwd, $hash)){
+        $_SESSION['user'] = $user;
+        header('Location: tradingCenter.php');
+      }
+
+      else
+        echo "Username and password combination not found!";
     }
 
     /*global $mainpage;
@@ -79,6 +95,29 @@
       $("#navBar").load("navBar.html");
     });
 
+    /*function validate() {
+
+      let alertUser = document.getElementById("userAlert");
+      let alertPass = document.getElementById("passAlert");
+
+      if (document.getElementById("username").value == "") {
+        alertUser.style.display = "block";
+      }
+      else {
+        alertUser.style.display = "none";
+      }
+
+      if (document.getElementById("password").value == "") {
+        alertPass.style.display = "block";
+      }
+      else {
+        alertPass.style.display = "none";
+      }
+
+      if (document.getElementById("username").value != "" && document.getElementById("password").value != "") {
+        window.location.href = 'tradingCenter.html';
+      }
+    }*/
   </script>
 
 </body>
