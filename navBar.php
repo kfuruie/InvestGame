@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<?php session_start();?>
+
 <html lang="en">
 
 <head>
@@ -10,11 +13,16 @@
     <title>Navigation Bar</title>
   
 </head>
-
-  <div class="searchbar">
-    <form action="#" method="post">
-      <input type="text" placeholder="Search" name="search" size="50" maxlength="50">
-      <button type="submit">SEARCH</button>
+  
+  <div class="uberHeader">
+    <div class="searchbar">
+      <form>
+        <input type="text" placeholder="Search" name="search" size="50" maxlength="50">
+        <button type="submit">SEARCH</button>
+      </form>
+    </div>
+    <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
+      <button type="submit">LOGOUT</button>
     </form>
   </div>
 
@@ -24,11 +32,18 @@
       <i class="fa fa-bars"></i>
       </a>
       <a class="navButton" href="">HOME</a> <!--Fix my link later -->
-      <a class="navButton" href="tradingCenter.php">SEARCH</a>
+      <a class="navButton" href="tradingCenter.php">LISTINGS</a>
       <a class="navButton" href="portfolio.php">PORTFOLIO</a>
       <a class="navButton" href="about.html">ABOUT</a>
     </div>
   </div>
+
+  <?php
+    if ($_SERVER['REQUEST_METHOD'] == "POST") {
+        session_destroy();
+        header('Location: login.php');
+    }
+  ?>
 
 <script>
   function hamburger(){
@@ -43,5 +58,4 @@
     }
   }
 </script>
-
-  </html>
+</html>
