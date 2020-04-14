@@ -39,18 +39,22 @@
 
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
       	//Database interaction
-      	//Email validation
-    	//Password validation
 
     	if(strlen($_POST['name']) > 0) {
         	$user = trim($_POST['name']);
 
         	if (!ctype_alnum($user)) {
-          	echo "Username must be alphanumeric only!";
+          	echo "Username must be alphanumeric only! </br>";
           	//reject('name');
         	}
         	else {
-        		header('Location: login.php');
+        		$email = ($_POST['email']);
+        		if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        			echo "Invalid email format </br>";
+        		}
+        		else {
+        			header('Location: login.php');
+        		}
         	}
     	}
   	}
