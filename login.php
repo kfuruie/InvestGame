@@ -41,7 +41,7 @@
         $user = trim($_POST['name']);
 
         if (!ctype_alnum($user)) {
-          echo "Username must be alphanumeric only!";
+          echo "Username must be alphanumeric only! </br>";
           //reject('name');
         }
         else {
@@ -53,7 +53,7 @@
             header('Location: tradingCenter.php');
           }
           else
-            echo "Username and password combination not found!";
+            echo "Username and password combination not found! </br>";
           }
         }
       }
