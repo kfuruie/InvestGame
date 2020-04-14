@@ -1,5 +1,5 @@
 <?php 
-
+require('connectdb.php');
 // require: if a required file is not found, reqire() produces a fatal error, the rest of the script won't run
 // include: if a required file is not found, include() thorws a warning, the rest of the script will run
 
@@ -32,12 +32,13 @@ function addUser($user, $pwd)
 	$statement->closeCursor();
 }
 
-function updateShares($fury, $le)
+function updateShares($user, $fury, $le)
 {
 	global $db;
 	
-	$query = "UPDATE user_info SET fury_shares=:fury, le_shares=:le";
-	$statement = $db->prepare($query);
+	$query = "UPDATE user_info SET fury_shares=:fury, le_shares=:le WHERE username =:username";
+    $statement = $db->prepare($query);
+    $statement->bindValue(':username', $user);
 	$statement->bindValue(':fury', $fury);
 	$statement->bindValue(':le', $le);
 	$statement->execute();

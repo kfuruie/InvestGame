@@ -34,6 +34,7 @@
     </form>
 
  	<?php
+  require('dbcommands.php');
 
  	function register() {
 
@@ -53,6 +54,7 @@
         			echo "Invalid email format </br>";
         		}
         		else {
+              addUser($_POST['name'], $_POST['pwd']);
         			header('Location: login.php');
         		}
         	}
