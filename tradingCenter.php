@@ -63,7 +63,7 @@
 
       <div class="confirmation">
       	<div class="total">Total: $<span id="total">0</span></div>
-      	<button class="confirm" type="submit">Confirm Order</button>
+      	<button class="confirm" type="submit" name="confirm">Confirm Order</button>
       </div>
 
     </div>
@@ -77,7 +77,7 @@
   ?>
 
   <?php
-    if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['confirm'])) {
       if (($_POST['fury'] >= 0) && _($_POST['le'] >= 0)) {
 
         $furyShares = $_POST['fury'];

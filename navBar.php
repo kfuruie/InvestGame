@@ -21,9 +21,21 @@
         <button type="submit">SEARCH</button>
       </form>
     </div>
-    <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
-      <button type="submit">LOGOUT</button>
-    </form>
+    <!--<div class="profile">
+      <div class="username">
+        <?php if (isset($_SESSION['user'])) {
+          echo $_SESSION['user'];
+        } else {
+          echo "New User";
+        }
+        ?>
+      </div>
+      <?php if (isset($_SESSION['user'])) { ?>
+      <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
+        <button type="submit" name="logout">LOGOUT</button>
+      </form>
+      <?php } else ?>
+    </div>-->
   </div>
 
   <div class="header">
@@ -38,12 +50,12 @@
     </div>
   </div>
 
-  <?php
-    if ($_SERVER['REQUEST_METHOD'] == "POST") {
+  <!--<?php
+    if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['logout'])) {
         session_destroy();
         header('Location: login.php');
     }
-  ?>
+  ?>-->
 
 <script>
   function hamburger(){

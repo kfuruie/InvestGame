@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+<?php if (isset($_SESSION['user'])) { session_destroy(); } ?>
 <?php session_start();?>
 
 <html lang="en">
@@ -14,6 +15,7 @@
 </head>
 
 <body>
+
   <div id="navBar"></div>
   <div class="content">
     <form class="login" action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
@@ -26,7 +28,7 @@
         <label>Password</label>
         <input class="inputText" type="password" id="password" name="pwd" placeholder="Password" required>
       </div>
-      <button class="btnSubmit" type="submit">LOGIN</button>
+      <button class="btnSubmit" type="submit" name="login">LOGIN</button>
       <button onclick="window.location.href = 'registration.php';" class="btnSubmit">REGISTER</button>
     </div>
 
@@ -34,7 +36,7 @@
 
   function authenticate() {
 
-    if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['login'])) {
       if(strlen($_POST['name']) > 0) {
         $user = trim($_POST['name']);
 

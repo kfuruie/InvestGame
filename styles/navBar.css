@@ -62,6 +62,13 @@ a {
 
 /*Desktop View*/
 @media (min-width: 800px) {
+
+  .uberHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
   .searchbar {
     display: flex;
     justify-content: center;
