@@ -17,7 +17,7 @@
       </div>
       <div>
         <label>Username</label>
-        <input class="inputText" type="text" id="username" name="name" placeholder="Username" auto-focus required>
+        <input class="inputText" type="text" id="username" name="name" placeholder="Username" autofocus required>
       </div>
       <div>
         <label>Email</label>

@@ -32,7 +32,9 @@
 
       <div class="entry">
         <div class="entity">Fury Investments</div>
-        <div class="shares">10</div>
+        <div class="shares">
+          <?php if(isset($_COOKIE[$fury])) echo $_COOKIE[$fury] . " shares"; ?>
+        </div>
         <div class="value">$100</div>
         <div class="dailyChange">-2.16%</div>
         <div class="buySell">
@@ -49,7 +51,9 @@
 
       <div class="entry">
         <div class="entity">Le Holdings</div>
-        <div class="shares">10</div>
+        <div class="shares">
+          <?php if(isset($_COOKIE[$le])) echo $_COOKIE[$le] . " shares"; ?>
+        </div>
         <div class="value">$200</div>
         <div class="dailyChange">+6.73%</div>
         <div class="buySell">
