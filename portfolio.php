@@ -2,8 +2,6 @@
 <html lang="en">
 
 <head>
-  <meta name="author" content="krf3tb">
-  <meta name="author" content="dbl3jf">
   <meta charset="utf-8">
   <title>Portfolio</title>
   <link rel="stylesheet" href="styles/portfolio.css">
@@ -12,9 +10,13 @@
 
 <body>
 
+  <?php session_start();
+    if (isset($_SESSION['user'])) {
+  ?>
+
   <div id="navBar"></div>
   <div class="content">
-    <div class="total">Total Net Worth: $300</div>
+    <div class="total"> <?php if (isset($_SESSION['user'])) echo %_SESSION['user']; ?>'s Net Worth: $300</div>
     <div class="investments">
 
       <div class="labels">
@@ -63,6 +65,13 @@
 
     </div>
   </div>
+
+  <?php
+    }
+    else {
+      header('Location: login.php');
+    }
+  ?>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>

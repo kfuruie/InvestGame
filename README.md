@@ -1,45 +1,37 @@
 # InvestGame
 
 
-__Phase 2 TODO__
+__Phase 3 TODO__
 
 ---
 
-Index Page
-- [X] ~~Make Index page w/ Market Data as whole or Investments as whole~~
-- [X] ~~Add links to the navBar buttons (Dependent on above)~~
-
----
-
-Missing Buttons/Functionality
-- [X] ~~Add Search Bar to the navBar~~
-- [X] ~~Link from Login page -> Index page~~
-- [X] ~~Link "Confirm Order" button on Trading Center to Portfolio~~
-- [X] ~~Ticker Buttons in Trading Center~~
-- [X] ~~Portfolio Buy/Sell buttons/input functionality~~
-- [X] ~~Add "Shopping Cart" functionality to Trading Center~~
-- [X] ~~Create Dummy Shopping Cart page~~
-
----
-
-NavBar
-- [X] ~~Create "Hamburger" button for NavBar on mobile view [W3 Solution]~~(https://www.w3schools.com/howto/howto_css_menu_icon.asp)
-
----
-
-Form Validation
-- [X] ~~Register page form validation~~
-- [X] ~~Login page form validation~~
-- [X] ~~Search Bar form validation~~
-- [X] ~~Mask password entry for all relevant forms~~
-
----
-
-Finishing Touches
-- [ ] Go back and make everything look pretty
+- (6 points) — Correctly and properly implement at least three of the following requirements (2 points each):
+   - Use array(s), may be one-dimensional arrays or multi-dimensional arrays
+   - Use expressions
+   - Use control structures (selection and loop)
+   - Use predefined / standard function(s)
+- ~~(4 points) — Correctly and properly implement at least one user-defined function~~
+- (6 points) — Correctly and properly use the following implicit objects:
+   - (3 points) $_GET
+   - ~~(3 points) $_POST~~
+- (12 points) — Appropriate server-side input validation
+   - (10 points) Properly validate form data
+   - (2 points) Provide user-appropriate error messages
+      - If no error message is provided, other reasonable and appropriate handling (such as auto-complete or auto-correction with defaults) and/or some forms of user-appropriate feedback are acceptable.
+- (10 points) — Proper implementation of form submission and handling
+- (15 points) — Correctly implement and properly support multiple users, using the server-side $_SESSION object
+- (5 points) — Correctly implement and properly maintain state of the application using at least one of the following mechanisms
+   - $_COOKIE
+   - URL rewriting
+   - Hidden form field(s)
+- (16 points) — Correctly implement and properly support multiple sessions, using a relational database
+   - (8 points) Users must be able to retrieve and view data previously stored in a database and use them in some ways to serve some purposes
+   - (8 points) Users must be able to update data stored in a database; i.e., data being stored must reflect the user inputs and/or the application states.
+- (6 points) — Adherence to all usability concepts as discussed in class
+- (5 points) — Use good coding style: readability, style, and maintainability
+   - Make identifier names understandable
+   - Use proper and consistent indentation
+   - Use comments
+   - Use carriage return
 
 
----
-
-Things to cite
-- [X] ~~Link together NavBars so only one file has to be changed~~ [Github Solution](https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages)
