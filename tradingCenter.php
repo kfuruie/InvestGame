@@ -69,7 +69,7 @@
   <?php
     }
     else {
-      header('Location: porfolio.php');
+      header('Location: login.php');
     }
   ?>
 
@@ -125,3 +125,4 @@
   </script>
 
 </body>
+</html>

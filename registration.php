@@ -47,7 +47,7 @@
       //Stuff to interact with database?
       //Not sure what to put here
 
-      header('Location: porfolio.php');
+      header('Location: login.php');
 
     }
 
@@ -59,3 +59,4 @@
 
 
 </body>
+</html>
