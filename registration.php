@@ -41,37 +41,19 @@
 
   <?php
 
-  function authenticate() {
-    global $mainpage;
+  function register() {
 
-    if (($_SERVER['REQUEST_METHOD'] == "POST") && (strlen($_POST['name']) > 0)) {
-      $user = trim($_POST['name']);
+    if ($_SERVER['REQUEST_METHOD'] == "POST") {
+      //Stuff to interact with database?
+      //Not sure what to put here
 
-      if (!ctype_alnum($user)) {
-        reject('name');
-      }
+      header('Location: porfolio.php');
 
-      if (isset($_POST['pwd'])) {
-        $pwd = trim($_POST['pwd']);
-        $pwd = htmlspecialchars($pwd);
-
-        if (!ctype_alnum($pwd)) {
-          reject('password');
-        }
-
-        else {
-          $_SESSION['user'] = $user;
-          $hash_pwd = password_hash($pwd, PASSWORD_BCRYPT);
-          $_SESSION['pwd'] = $hash_pwd;
-          header('Location: porfolio.php');
-        }
-      }
     }
 
   }
 
-  $mainpage = "portfolio.php";
-  authenticate();
+  register();
 
   ?>
 
