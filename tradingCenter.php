@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<?php session_start();?>
+
 <html lang="en">
 
 <head>
@@ -10,7 +13,7 @@
 
 <body>
 
-  <?php session_start(); 
+  <?php 
     if (isset($_SESSION['user'])) {
   ?>
 
