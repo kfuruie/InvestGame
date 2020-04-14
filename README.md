@@ -14,9 +14,9 @@ __Phase 3 TODO__
 - (6 points) — Correctly and properly use the following implicit objects:
    - (3 points) $_GET
    - ~~(3 points) $_POST~~
-- (12 points) — Appropriate server-side input validation
-   - (10 points) Properly validate form data
-   - (2 points) Provide user-appropriate error messages
+- ~~(12 points) — Appropriate server-side input validation~~
+   - ~~(10 points) Properly validate form data~~
+   - ~~(2 points) Provide user-appropriate error messages~~
       - If no error message is provided, other reasonable and appropriate handling (such as auto-complete or auto-correction with defaults) and/or some forms of user-appropriate feedback are acceptable.
 - (10 points) — Proper implementation of form submission and handling
 - ~~(15 points) — Correctly implement and properly support multiple users, using the server-side $_SESSION object~~
