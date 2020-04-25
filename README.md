@@ -4,6 +4,7 @@
 __Phase 4 TODO__
 
 - ICA 6 & ICA 11 seem the most relevant
+   - We'll probably also have do the PHP Session integration with Angular
 - Integrate Angular with our current architecture 
 - Can probably use Angular specifically for our "Shopping Cart"/tradingCenter
    - Create a bunch of sample investments as part of an Angular Component, use ngFor to iterate through them and list them
