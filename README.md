@@ -1,4 +1,4 @@
-# InvestGame
+# InvestIt
 
 
 __Phase 4 TODO__
