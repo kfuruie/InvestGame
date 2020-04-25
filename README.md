@@ -3,6 +3,11 @@
 
 __Phase 4 TODO__
 
+- Integrate Angular with our current architecture
+- Can probably use Angular specifically for our "Shopping Cart"/tradingCenter
+   - Create a bunch of sample investments as part of an Angular Component, use ngFor to iterate through them and list them
+   - Use ngIf to mark whether the particular investment has been checked for the "Shopping Cart"
+
 ---
 __Angular Implementation__ (58 points)
 
@@ -13,7 +18,7 @@ __Angular Implementation__ (58 points)
    - ngSwitch (and ngSwitchCase and ngSwitchDefault -- count as one use of structural directives)
 - (5 points) — Correctly use built-in attribute directive ngStyle, [ngStyle], or [style] to set at least one CSS property
 - (5 points) — Correctly use built-in attribute directive ngClass, [ngClass], or [class] to set at least one CSS class
-- (10 points) Correctly use (or implement) at least two categories of of data binding (5 points each). Implementing two of the same category does not satisfy this requirement.
+- (10 points) Correctly use (or implement) at least two categories of data binding (5 points each). Implementing two of the same category does not satisfy this requirement.
    - One-way binding from component to DOM
    - One-way binding from DOM to component, "event binding"
    - Two-way binding
