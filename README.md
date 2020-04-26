@@ -5,7 +5,8 @@ __Phase 4 TODO__
 
 - ICA 6 & ICA 11 seem the most relevant
    - We'll probably also have do the PHP Session integration with Angular
-- Integrate Angular with our current architecture 
+- Integrate Angular with our current architecture
+   - app.component.html needs to be app.component.php? I think?
    - Confirm Order Button
       - Needs to interact with Database (Shares bought needs to update the Database)
       - Needs to take you to the Portfolio
