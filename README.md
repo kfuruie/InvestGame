@@ -8,7 +8,7 @@ __Phase 4 TODO__
 - Integrate Angular with our current architecture 
 - Can probably use Angular specifically for our "Shopping Cart"/tradingCenter
    - Create a bunch of sample investments as part of an Angular Component, use ngFor to iterate through them and list them
-   - Use ngIf to mark whether the particular investment has been checked for the "Shopping Cart"
+   - Use ngIf to mark whether the particular investment has been checked for the "Shopping Cart"?
 
 ---
 __Angular Implementation__ (58 points)
