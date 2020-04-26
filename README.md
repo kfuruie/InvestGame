@@ -6,10 +6,12 @@ __Phase 4 TODO__
 - ICA 6 & ICA 11 seem the most relevant
    - We'll probably also have do the PHP Session integration with Angular
 - Integrate Angular with our current architecture 
-- Can probably use Angular specifically for our "Shopping Cart"/tradingCenter
-   - ~~Create a bunch of sample investments as part of an Angular Component, use ngFor to iterate through them and list them~~
-   - Use ngIf to show a helper message when no items have been selected
-      - If items have been selected, the ngIf will show the total value of the shares * the price of the investment
+   - Confirm Order Button
+      - Needs to interact with Database (Shares bought needs to update the Database)
+      - Needs to take you to the Portfolio
+   - Fix all the links
+      - AKA everything that pointed to tradingCenter.html needs to point to app\app.component.html
+   - Integrate PHP SESSION with Angular
 
 ---
 __Angular Implementation__ (58 points)
