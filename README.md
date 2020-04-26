@@ -15,11 +15,11 @@ __Phase 4 TODO__
 __Angular Implementation__ (58 points)
 
 - ~~(14 points) Correctly implement at least one component~~
-- (10 points) Correctly use at least two out of three common, built-in structural directives (5 points each)
-   - ngIf
+- ~~(10 points) Correctly use at least two out of three common, built-in structural directives (5 points each)~~
+   - ~~ngIf~~
    - ~~ngFor~~
-   - ngSwitch (and ngSwitchCase and ngSwitchDefault -- count as one use of structural directives)
-- (5 points) — Correctly use built-in attribute directive ngStyle, [ngStyle], or [style] to set at least one CSS property
+   - ~~ngSwitch (and ngSwitchCase and ngSwitchDefault -- count as one use of structural directives)~~
+- ~~(5 points) — Correctly use built-in attribute directive ngStyle, [ngStyle], or [style] to set at least one CSS property~~
 - (5 points) — Correctly use built-in attribute directive ngClass, [ngClass], or [class] to set at least one CSS class
 - ~~(10 points) Correctly use (or implement) at least two categories of data binding (5 points each). Implementing two of the same category does not satisfy this requirement.~~
    - ~~One-way binding from component to DOM~~
