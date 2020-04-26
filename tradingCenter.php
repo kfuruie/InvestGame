@@ -5,6 +5,8 @@
 <html lang="en">
 
 <head>
+  <meta name="author" content="krf3tb">
+  <meta name="author" content="dbl3jf">
   <meta charset="utf-8">
   <title>Trading Center</title>
   <link rel="stylesheet" href="styles/tradingCenter.css">
