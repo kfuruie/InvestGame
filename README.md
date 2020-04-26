@@ -21,10 +21,10 @@ __Angular Implementation__ (58 points)
    - ngSwitch (and ngSwitchCase and ngSwitchDefault -- count as one use of structural directives)
 - (5 points) — Correctly use built-in attribute directive ngStyle, [ngStyle], or [style] to set at least one CSS property
 - (5 points) — Correctly use built-in attribute directive ngClass, [ngClass], or [class] to set at least one CSS class
-- (10 points) Correctly use (or implement) at least two categories of data binding (5 points each). Implementing two of the same category does not satisfy this requirement.
+- ~~(10 points) Correctly use (or implement) at least two categories of data binding (5 points each). Implementing two of the same category does not satisfy this requirement.~~
    - ~~One-way binding from component to DOM~~
    - ~~One-way binding from DOM to component, "event binding"~~
-   - Two-way binding
+   - ~~Two-way binding~~
 - (14 points) Correctly interact with at least one server-side component
 
 ---
