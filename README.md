@@ -10,7 +10,7 @@ __Phase 4 TODO__
       - Needs to interact with Database (Shares bought needs to update the Database)
       - Needs to take you to the Portfolio
    - Fix all the links
-      - AKA everything that pointed to tradingCenter.html needs to point to app\app.component.html
+      - AKA everything that pointed to tradingCenter.html needs to point to src\app\app.component.html
    - Integrate PHP SESSION with Angular
 
 ---
