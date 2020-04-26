@@ -7,8 +7,9 @@ __Phase 4 TODO__
    - We'll probably also have do the PHP Session integration with Angular
 - Integrate Angular with our current architecture 
 - Can probably use Angular specifically for our "Shopping Cart"/tradingCenter
-   - Create a bunch of sample investments as part of an Angular Component, use ngFor to iterate through them and list them
-   - Use ngIf to mark whether the particular investment has been checked for the "Shopping Cart"?
+   - ~~Create a bunch of sample investments as part of an Angular Component, use ngFor to iterate through them and list them~~
+   - Use ngIf to show a helper message when no items have been selected
+      - If items have been selected, the ngIf will show the total value of the shares * the price of the investment
 
 ---
 __Angular Implementation__ (58 points)
