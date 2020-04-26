@@ -1,36 +1,43 @@
-# InvestGame
+# InvestIt
 
 
-__Phase 3 TODO__
+__Phase 4 TODO__
+
+- ICA 6 & ICA 11 seem the most relevant
+   - We'll probably also have do the PHP Session integration with Angular
+- Integrate Angular with our current architecture
+   - app.component.html needs to be app.component.php? I think?
+   - Confirm Order Button
+      - Needs to interact with Database (Shares bought needs to update the Database)
+      - Needs to take you to the Portfolio
+   - Fix all the links
+      - AKA everything that pointed to tradingCenter.html needs to point to src\app\app.component.html
+   - Integrate PHP SESSION with Angular
 
 ---
+__Angular Implementation__ (58 points)
 
-- (6 points) — Correctly and properly implement at least three of the following requirements (2 points each):
-   - Use array(s), may be one-dimensional arrays or multi-dimensional arrays
-   - ~~Use expressions~~
-   - Use control structures (selection and loop)
-   - ~~Use predefined / standard function(s)~~
-- ~~(4 points) — Correctly and properly implement at least one user-defined function~~
-- (6 points) — Correctly and properly use the following implicit objects:
-   - (3 points) $_GET
-   - ~~(3 points) $_POST~~
-- ~~(12 points) — Appropriate server-side input validation~~
-   - ~~(10 points) Properly validate form data~~
-   - ~~(2 points) Provide user-appropriate error messages~~
-- ~~(10 points) — Proper implementation of form submission and handling~~
-- ~~(15 points) — Correctly implement and properly support multiple users, using the server-side $_SESSION object~~
-- ~~(5 points) — Correctly implement and properly maintain state of the application using at least one of the following mechanisms~~
-   - ~~$_COOKIE~~
-   - ~~URL rewriting~~
-   - ~~Hidden form field(s)~~
-- (16 points) — Correctly implement and properly support multiple sessions, using a relational database
-   - (8 points) Users must be able to retrieve and view data previously stored in a database and use them in some ways to serve some purposes
-   - (8 points) Users must be able to update data stored in a database; i.e., data being stored must reflect the user inputs and/or the application states.
-- (6 points) — Adherence to all usability concepts as discussed in class
-- (5 points) — Use good coding style: readability, style, and maintainability
-   - Make identifier names understandable
-   - Use proper and consistent indentation
-   - Use comments
-   - Use carriage return
+- ~~(14 points) Correctly implement at least one component~~
+- ~~(10 points) Correctly use at least two out of three common, built-in structural directives (5 points each)~~
+   - ~~ngIf~~
+   - ~~ngFor~~
+   - ~~ngSwitch (and ngSwitchCase and ngSwitchDefault -- count as one use of structural directives)~~
+- ~~(5 points) — Correctly use built-in attribute directive ngStyle, [ngStyle], or [style] to set at least one CSS property~~
+- ~~(5 points) — Correctly use built-in attribute directive ngClass, [ngClass], or [class] to set at least one CSS class~~
+- ~~(10 points) Correctly use (or implement) at least two categories of data binding (5 points each). Implementing two of the same category does not satisfy this requirement.~~
+   - ~~One-way binding from component to DOM~~
+   - ~~One-way binding from DOM to component, "event binding"~~
+   - ~~Two-way binding~~
+- (14 points) Correctly interact with at least one server-side component
 
+---
+__Final Project Deliverables__ (16 points)
+- (2 points) It must include dynamic behavior, where the front end responds to user input events or web service and updates the interface accordingly.
+- (2 points) It must include at least 3 different functionalities (or scenarios), providing services to the users.
+- (2 points) It must include HTML, CSS, and JavaScript.
+- (2 points) It must include at least one back-end PHP component.
+- (2 points) It must support multiple users (i.e., maintain the application state using $_SESSION and another mechanism — refer to the server-side component).
+- (2 points) It must support multiple sessions allowing returning users to access their existing information (i.e., persist data using a database — refer to the server-side component).
+- (2 points) It must include at least one front end Angular component.
+- (2 points) It must be a responsive design project.
 

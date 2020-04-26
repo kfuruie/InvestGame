@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Trading Center</title>
+  <link rel="stylesheet" href="styles/tradingCenter.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+  <div id="navBar"></div>
+  <form class="content" #orderForm="ngForm" (ngSubmit)="onSubmit(orderForm.value)">
+    <div class="tradingCenter">
+      <div class="heading">
+      	<div class="dummy"></div>
+        <div class="title">Trading Center</div>
+        <div class="button sort">Sort By</div>
+      </div>
+      <div *ngFor="let investment of investments">
+        <div class="entry">
+          <div class="entryContainer">
+            <div class="descriptor">
+              <div class="name">{{ investment.name }}</div>
+              <div class="button details">More Details</div>
+            </div>
+            <div class="price">
+              <div class="priceDesc">Price Per Share: $<span>{{ investment.price }}</span></div>
+              <input name="shares" type="number" (change)="updateShares($event, investment.id)" value=0 min="0" max="99"/>
+            </div>
+            <div class="totalPrice">
+              <div class="totalDesc">Total: $<span> {{ investment.price * investment.shares }}</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="total == 0" [ngStyle]="{color: 'maroon'}" [ngClass]="['centerText']" > 
+        Try buying some shares in something!
+      </div>
+
+      <div class="confirmation">
+      	<div class="total">Total: $<span> {{ total }} </span></div>
+      	<button class="confirm">Confirm Order</button>
+      </div>
+
+    </div>
+  </form>
