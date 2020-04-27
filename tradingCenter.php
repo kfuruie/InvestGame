@@ -98,7 +98,7 @@
     var total = 0;
 
     $(function(){
-      $("#navBar").load("navBar.php");
+      $("#navBar").load("navBar.html");
     });
 
     function updateTotal(checkID) {
