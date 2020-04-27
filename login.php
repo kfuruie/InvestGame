@@ -50,7 +50,7 @@
 
           if (password_verify($pwd, $hash)){
             $_SESSION['user'] = $user;
-            header('Location: tradingCenter.php');
+            header('Location: hhtp://localhost:4200/');
           }
           else
             echo "Username and password combination not found! </br>";
