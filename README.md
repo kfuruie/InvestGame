@@ -11,5 +11,5 @@ A project for UVA's CS 4640 Web PL, Spring 2020. InvestIt was designed as a web 
 
 
 ## Contributors
-[Kent Furuie](https://github.com/kfuruie)
-[Daniel Le](https://github.com/ledaniel1020)
+* [Kent Furuie](https://github.com/kfuruie)
+* [Daniel Le](https://github.com/ledaniel1020)
